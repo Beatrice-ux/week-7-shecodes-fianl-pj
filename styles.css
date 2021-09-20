@@ -5,12 +5,15 @@ li {
   list-style: none;
 }
 
-.weather-app {
-  /* max-width: 900px;
-  margin: 30px auto;
-  padding: 20px 40px; */
-  border: 0.5px solid gray;
-  border-radius: 4%;
+#info-box {
+  text-transform: capitalize;
+}
+
+#search-form {
+  margin: 15px 15px 5px;
+}
+#day-report {
+  padding: 5px 30px;
 }
 
 .weather-wrapper {
@@ -18,19 +21,13 @@ li {
   margin: 30px auto;
   padding: 10px 40px;
 }
-#search-form {
-  margin: 15px 15px 5px;
+.weather-app {
+  /* max-width: 900px;
+  margin: 30px auto;
+  padding: 20px 40px; */
+  border: 0.5px solid gray;
+  border-radius: 4%;
 }
-#day-report {
-  padding: 5px 30px;
-}
-#clearfix-weather {
-  margin-bottom: 0;
-  font-size: 24px;
-  color: red;
-  display: inline-block;
-}
-
 .float-right {
   display: inline-flex;
 }
@@ -38,9 +35,12 @@ li {
   color: rgb(33, 33, 33);
   font-size: 114px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .humid-wind-container {
+  margin-bottom: 0;
+  font-size: 24px;
+  display: inline-block;
   padding-top: 15px;
 }
