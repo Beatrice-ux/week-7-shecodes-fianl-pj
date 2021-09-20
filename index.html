@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>Weather app week 7</title>
 </head>
-<div class="container">
+<div class="weather-wrapper">
+    <div class="weather-app">
+<div class="container" >
 <form id="search-form">
     <div class="row">
         <div class="col-9">
@@ -28,10 +30,9 @@
     </div>
 </form>
 </div>
-<div class="container">
-    
-    <div class="row">
-        <div class="col-9">
+<div class="container"id="day-report" >
+<div class="row">
+    <div class="col-9">
             <h1>
                 San Francisco
             </h1>
@@ -46,26 +47,32 @@
             alt="Cloudy">
         </div>
         <div class="col-3">
+            <div class="float-right">
             <h1 id="temperature">
-                27°C|°F
+                27
             </h1>
-            <div class="row">
-                <div class="col-6">
-                    <i class="fas fa-wind">
-                        2km/h
-                    </i>
-                </div>
-                <div class="col-6">
-                    <i class="fas fa-tint">
-                        73%
-                    </i>
-                </div>
+            <span class="units">°C|°F</span>
             </div>
+                <div class="humid-wind-container">
+                    <div class="row" >
+                        <div class="col-6" id="clearfix-weather">
+                            <i class="fas fa-wind" >
+                                2km/h
+                            </i>
+                        </div>
+                        <div class="col-6"id="clearfix-weather">
+                            <i class="fas fa-tint">
+                                73%
+                            </i>
+                        </div>
+                    
+                    </div>
+                </div>
         </div>
     </div>
 </div>
 <hr>
-<div class="container">
+<div class="container" id="forecast">
     <div class="row">
         <div class="col-2">
             <ul>
@@ -104,8 +111,12 @@
     </div>
     </div>
 </div>
+</div>
+<small>
+    <a href="https://github.com/Beatrice-ux/week-7-shecodes-fianl-pj" targat="_blank">Open-source code</a>by Erna Fan
+</small>
 
-
+</div>
 <body>
 
 
