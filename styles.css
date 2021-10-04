@@ -31,11 +31,17 @@ li {
 .float-right {
   display: inline-flex;
 }
+
 .float-right #temperature {
   color: rgb(33, 33, 33);
   font-size: 114px;
   line-height: 1;
   font-weight: 200;
+}
+
+.units.active {
+  cursor: default;
+  color: green;
 }
 
 .humid-wind-container {
