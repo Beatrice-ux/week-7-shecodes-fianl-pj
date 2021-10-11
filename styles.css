@@ -58,15 +58,14 @@ li {
 }
 
 .weather-forecast-date {
-  font: size 16px;
-  opacity: 0.5;
-}
-
-.weather-forecast-temp {
   font-size: 16px;
-  text-align: center;
+  opacity: 0.5;
 }
 
-.min-temp {
+.weather-forecast-temperature-min {
   opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
