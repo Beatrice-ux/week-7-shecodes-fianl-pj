@@ -11,8 +11,9 @@ function formDate(timestamp){
     return(`${day} ${hours}:${minutes}`);
 }
 
-function displayForecast (response){
+function displayForecast(response) {
     console.log(response.data.daily);
+
     let forecastElement=document.querySelector("#forecast");
     let days=["Tue", "Wed","Thu","Fri","Sat","Sun"];
     let forecastHTML=`<div class="row">`;
@@ -44,7 +45,6 @@ function getForecest(coordinates){
 }
 
 function showTemperature(response){
-    console.log(response.data);
     let placeElement=document.querySelector("#place");
     let temperatureElement=document.querySelector("#temperature");
     let descriptionElement=document.querySelector("#description");
@@ -105,3 +105,5 @@ fahrenheitLink.addEventListener("click",showFahrenheit);
 
 let celciusLink=document.querySelector("#celcius");
 celciusLink.addEventListener("click",showCelcius);
+
+searchCity("New York");
