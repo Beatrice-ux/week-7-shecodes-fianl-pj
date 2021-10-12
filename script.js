@@ -104,5 +104,5 @@ fahrenheitLink.addEventListener("click",showFahrenheit);
 let celciusLink=document.querySelector("#celcius");
 celciusLink.addEventListener("click",showCelcius);
 
-searchCity("New York");
-displayForecast(response);
+searchCity("Hong Kong");
+displayForecast();
