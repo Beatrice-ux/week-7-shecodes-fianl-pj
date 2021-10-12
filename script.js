@@ -11,7 +11,7 @@ function formDate(timestamp){
     return(`${day} ${hours}:${minutes}`);
 }
 
-function displayForecast(response) {
+function displayForecast() {
     let forecastElement=document.querySelector("#forecast");
     let days=["Tue", "Wed","Thu","Fri","Sat","Sun"];
     let forecastHTML=`<div class="row">`;
