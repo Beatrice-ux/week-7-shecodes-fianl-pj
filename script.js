@@ -33,6 +33,9 @@ function displayForecast (){
     forecastElement.innerHTML=forecastHTML;
     console.log (forecastHTML);
 }
+function getForecest(response){
+    console.log(response.data.coord);
+}
 
 function showTemperature(response){
     console.log(response.data);
@@ -52,6 +55,8 @@ function showTemperature(response){
     windElement.innerHTML=Math.round(response.data.wind.speed);
     dateElement.innerHTML= formDate(response.data.dt*1000)
     iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+    getForecast(response.data.coord);
 
 }
 
