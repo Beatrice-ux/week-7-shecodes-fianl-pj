@@ -93,28 +93,13 @@ function connectSearch(event){
     searchCity(cityinputElement.value);
 }
  
-function showFahrenheit (event){
-    event.preventDefault();
-    let temperatureElement=document.querySelector("#temperature");
-    let fahrenheitTemp=(celciusTemp* 9) / 5 + 32;
-    temperatureElement.innerHTML=Math.round(fahrenheitTemp);
-}
 
-function showCelcius (event){
-    event.preventDefault();
-    let temperatureElement=document.querySelector("#temperature");
-    temperatureElement.innerHTML=Math.round(celciusTemp);
-}
 
-let celciusTemp=null;
 
 let form=document.querySelector("#search-form");
 form.addEventListener("submit",connectSearch);
 
-let fahrenheitLink=document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click",showFahrenheit);
 
-let celciusLink=document.querySelector("#celcius");
-celciusLink.addEventListener("click",showCelcius);
+
 
 searchCity("Hong Kong");
